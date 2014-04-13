@@ -4,6 +4,14 @@ ActiveAdmin.register Work do
   permit_params :title, :content, :image1, :image2
 
 
+    index do
+      column :title
+      column :content
+
+      default_actions
+    end
+
+
 
     form do |f|
       f.inputs "Details" do

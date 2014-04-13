@@ -1,10 +1,10 @@
 
+<div class="work_index_box">
 
+	<% @works.each do |work| %>
+		
+		<div class="index_image1"><%= link_to (image_tag work.image1(:medium)), work_path(work) %></div>
 
-<% @works.each do |work| %>
+	<% end %>
 
-	<div class="workbox">
-		<%= link_to (image_tag work.image1(:large)), work_path(work) %>
-	</div>
-
-<% end %>
+</div>
