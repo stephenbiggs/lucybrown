@@ -16,7 +16,7 @@ ActiveAdmin.register Work do
     form do |f|
       f.inputs "Details" do
         f.input :title
-        f.input :content
+        f.input :content, as: :html_editor
         f.input :image1
         f.input :image2
       end

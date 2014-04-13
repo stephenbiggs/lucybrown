@@ -68,6 +68,10 @@ p {
 	margin-bottom: 10px;
 }
 
+b {
+	font-weight: bold;
+}
+
 h1 {
 	font-size: 22px;
 	letter-spacing: 2px;
@@ -176,8 +180,17 @@ h1 .strapline {
 	/** WORKS SHOW **/
 
 	.work_show_box {
-		padding-left: 227px;
-		padding-bottom: 180px;
+		color: $secondarycolor;
+	}
+
+	.work_show_right {
+		width: 762px;
+		padding-left: 90px;
+		float: right;
+	}
+
+	.work_show_left {
+		width: 138px;
 	}
 
 	.show_image1 {
@@ -190,8 +203,21 @@ h1 .strapline {
 		padding-left: 370px;
 	}
 
+	.show_next {
+		
+	}
+
+	.show_back {
+
+	}
+
 	.show_content {
 		margin-top: 50px;
+		padding-bottom: 180px;
+	}
+
+	.show_content b {
+		color: $primarycolor;
 	}
 
 

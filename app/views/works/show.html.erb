@@ -1,12 +1,17 @@
 
+	<div class="work_show_box">
 
-<div class="work_show_box">
-		<h2><%= @work.title %></h2>
-
-		<div class="show_image2"><%= image_tag @work.image2(:small) %></div>
-		<div class="show_image1"><%= image_tag @work.image1(:large) %></div>
-
-		<div class="show_content">
-			<p><%= @work.content %></p>
+		<div class="work_show_right">
+			<h2><%= @work.title %></h2>
+			<div class="show_image2"><%= image_tag @work.image2(:small) %></div>
+			<div class="show_image1"><%= image_tag @work.image1(:large) %></div>
+			<p class="show_next"><%= link_to "NEXT", work_path(@next) %></p>
+			<div class="show_content">
+				<p><%= raw @work.content %></p>
+			</div>
 		</div>
+
+		<div class="work_show_left">
+			<p class="show_back"><%= link_to "BACK", work_path(@back) %></p>
+		</div>	
 	</div>

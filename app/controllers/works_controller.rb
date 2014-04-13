@@ -7,6 +7,8 @@ class WorksController < ApplicationController
 
 	def show
 		@work = Work.find(params[:id])
+		@next = @work.id + 1
+		@back = @work.id - 1
 	end
 
 
