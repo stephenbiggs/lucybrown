@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title><%= content_for?(:title) ? yield(:title) : "Lucy Brown" %></title>
+
+    <%= stylesheet_link_tag    "application" %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+
+  <div class="wrapper">
+
+    <div class="centered">
+      <!-- HEADER -->
+      <header>
+
+            <div class="navbox">
+              <div class="navcontent">
+                <ul>
+                  <li><%= link_to 'WORK', works_path %></li>
+                  <li><%= link_to 'ABOUT', about_path %></li>
+                  <li><%= link_to 'CONTACT', contact_path %></li>
+                </ul>
+              </div>
+            </div>
+        
+
+            <div class="sitetitle">
+              <h1><%= link_to 'Lucy Brown', root_path %> <span class="strapline">graphic design, education, research</span></h1>
+            </div>
+          
+      </header>
+      <!-- HEADER end -->
+      
+
+
+      <!-- PAGE -->
+      <section class="pagecontent">
+        
+
+          <%= yield %>
+
+        
+      </section>
+      <!-- PAGE end -->
+
+
+    </div>
+  </div>
+  
+  </body>
+</html>

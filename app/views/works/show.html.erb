@@ -1,0 +1,12 @@
+
+
+<div class="work_show_box">
+		<h2><%= @work.title %></h2>
+
+		<div class="show_image2"><%= image_tag @work.image2(:small) %></div>
+		<div class="show_image1"><%= image_tag @work.image1(:large) %></div>
+
+		<div class="show_content">
+			<p><%= @work.content %></p>
+		</div>
+	</div>

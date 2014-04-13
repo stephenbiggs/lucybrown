@@ -1,0 +1,10 @@
+
+
+
+<% @works.each do |work| %>
+
+	<div class="workbox">
+		<%= link_to (image_tag work.image1(:large)), work_path(work) %>
+	</div>
+
+<% end %>

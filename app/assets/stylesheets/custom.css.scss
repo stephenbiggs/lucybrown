@@ -1,0 +1,232 @@
+@import url(http://fonts.googleapis.com/css?family=Varela);
+
+$primarycolor: #000; /* black */
+$secondarycolor: #74736c;		/* dark gray */
+$thirdcolor: #dddddd;			/* light gray */
+
+
+
+
+/* CSS Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/** Site Styles **/
+
+body, html {
+	font-family: 'Varela', sans-serif;
+	font-size: 16px;
+	height: 100%;
+}
+
+p {
+	line-height: 22px;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+}
+
+h1 {
+	font-size: 22px;
+	letter-spacing: 2px;
+}
+
+h2 {
+	margin: 35px 0px 20px 0px;
+	font-size: 16px;
+}
+
+
+.wrapper {
+
+}
+
+.centered {
+	width: 960px;
+	margin: 0 auto;
+	padding: 90px 30px 0px 30px;
+}
+
+/** Header **/
+
+.navbox {
+	width: auto;
+	height: 90px;
+}
+
+.navcontent{
+	float: right;
+	color: $secondarycolor;
+
+	li {
+		display: inline;
+		font-size: 14px;
+		letter-spacing: 3px;
+		margin-left: 30px;
+	}
+
+	a {
+		color: $secondarycolor;
+	}
+
+	a:active {
+		color: $primarycolor;
+	}
+
+	a:visited {
+		color: $secondarycolor;
+	}
+
+}
+
+
+h1 .strapline {
+	margin-left: 75px;
+	color: $thirdcolor;
+}
+
+.sitetitle {
+	height: 90px;
+
+	a {
+		color: $primarycolor;
+	}
+
+	a:visited {
+		color: $primarycolor;
+	}
+}
+
+
+/** Footer **/
+
+.home-contact {
+	font-size: 24px;
+	color: $secondarycolor;
+}
+
+
+
+/** Page Content **/
+
+.pagecontent {
+
+	p {
+		color: $secondarycolor;
+	}
+
+}
+
+
+	/** WORKS **/
+
+
+	/** WORKS SHOW **/
+
+	.work_show_box {
+		padding-left: 227px;
+		padding-bottom: 180px;
+	}
+
+	.show_image1 {
+
+	}
+
+	.show_image2 {
+		position: absolute;
+		z-index: 100;
+		padding-left: 370px;
+	}
+
+	.show_content {
+		margin-top: 50px;
+	}
+
+
+	/** STATIC PAGES **/
+		
+	.staticpage {
+		padding-left: 227px;
+		color: $secondarycolor;
+		padding-bottom: 180px;
+	}
+
+	.role {
+		margin-top: -16px;
+	}
+
+		/** Home **/
+
+		.homecontact {
+			margin: 90px 0px 0px 227px;
+			color: $secondarycolor;
+
+			li {
+				display: inline;
+				letter-spacing: 2px;
+				margin-left: 50px;
+			}
+
+			li:first-child {
+				margin-left: 0px;
+			}
+		}
+
+		/** Contact **/
+
+		.contactdetails {
+
+			li {
+				line-height: 22px;
+			}
+		}
+
+
+
+
+
+
+
+
