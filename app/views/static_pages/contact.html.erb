@@ -3,9 +3,9 @@
 <div class="staticpage">
 	<div class="contactdetails">
 		<ul>
-			<li>hello@lucybrown.co</li><br />
+			<li><%= mail_to "hello@lucybrown.co", ("hello@lucybrown.co") %></li><br />
 			<li>+44 (0) 7701008030</li><br />
-			<li>twitter @lucybrownco</li>
+			<li>twitter <%= link_to "@lucybrownco", ("http://twitter.com/lucybrownco") %></li>
 		</ul>
 	</div>
 </div>

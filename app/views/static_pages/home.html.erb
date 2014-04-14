@@ -1,15 +1,17 @@
 <% @page = "home" %>
 
-<div>
-	<%= image_tag @work1.image1(:medium) %>
-</div>
+<% if @work1.image1.exists? %>
+	<div>
+		<%= image_tag @work1.image1(:medium) %>
+	</div>
+<% end %>
 
 
 <div class="homecontact">
 	<ul>
-		<li>hello@lucybrown.co</li>
+		<li><%= mail_to "hello@lucybrown.co", ("hello@lucybrown.co") %></li>
 		<li>+44 (0)7701008030</li>
-		<li>@lucybrownco</li>
+		<li><%= link_to "@lucybrownco", ("http://twitter.com/lucybrownco") %></li>
 	</ul>
 </div>
 

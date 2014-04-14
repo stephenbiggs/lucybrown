@@ -82,6 +82,22 @@ h2 {
 	font-size: 16px;
 }
 
+a {
+		color: $secondarycolor;
+	}
+
+	a:active {
+		color: $secondarycolor;
+	}
+
+	a:visited {
+		color: $secondarycolor;
+	}
+
+	a:hover {
+		color: $secondarycolor;
+	}
+
 
 .wrapper {
 
@@ -111,17 +127,7 @@ h2 {
 		margin-left: 30px;
 	}
 
-	a {
-		color: $secondarycolor;
-	}
-
-	a:active {
-		color: $primarycolor;
-	}
-
-	a:visited {
-		color: $secondarycolor;
-	}
+	
 
 }
 

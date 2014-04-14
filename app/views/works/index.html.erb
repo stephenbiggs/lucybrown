@@ -4,8 +4,9 @@
 
 	<% @works.each do |work| %>
 		
-		<div class="index_image1"><%= link_to (image_tag work.image1(:medium)), work_path(work) %></div>
-
+		<% if work.image1.exists? %>
+			<div class="index_image1"><%= link_to (image_tag work.image1(:medium)), work_path(work) %></div>
+		<% end %>
 	<% end %>
 
 </div>
