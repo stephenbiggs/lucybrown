@@ -90,7 +90,7 @@ h2 {
 .centered {
 	width: 960px;
 	margin: 0 auto;
-	padding: 90px 30px 0px 30px;
+	padding: 50px 30px 0px 30px;
 }
 
 /** Header **/
@@ -123,6 +123,20 @@ h2 {
 		color: $secondarycolor;
 	}
 
+}
+
+.navcorrectpage {
+	a {
+		color: $primarycolor;
+	}
+
+	a:active {
+		color: $primarycolor;
+	}
+
+	a:visited {
+		color: $primarycolor;
+	}
 }
 
 
@@ -204,11 +218,13 @@ h1 .strapline {
 	}
 
 	.show_next {
-		
+		float: right;
+		padding-top: 333px; 
 	}
 
 	.show_back {
-
+		padding-top: 405px;
+		text-align: right;
 	}
 
 	.show_content {
@@ -218,6 +234,11 @@ h1 .strapline {
 
 	.show_content b {
 		color: $primarycolor;
+	}
+
+	.shownav {
+		font-size: 14px;
+		letter-spacing: 3px;
 	}
 
 
