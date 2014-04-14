@@ -25,19 +25,19 @@
                 <ul>
                 
                 <% if @page == "work" %>
-                  <li class="navcorrectpage"><b><%= link_to 'WORK', works_path %></b></li>
+                  <li class="navcorrectpage"><%= link_to 'WORK', works_path %></li>
                 <% else %>
                   <li><%= link_to 'WORK', works_path %></li>
                 <% end %>
 
                 <% if @page == "about" %>
-                  <li class="navcorrectpage"><b><%= link_to 'ABOUT', about_path %></b></li>
+                  <li class="navcorrectpage"><%= link_to 'ABOUT', about_path %></li>
                 <% else %>
                   <li><%= link_to 'ABOUT', about_path %></li>
                 <% end %>
 
                 <% if @page == "contact" %>
-                  <li class="navcorrectpage"><b><%= link_to 'CONTACT', contact_path %></b></li>
+                  <li class="navcorrectpage"><%= link_to 'CONTACT', contact_path %></li>
                 <% else %>
                   <li><%= link_to 'CONTACT', contact_path %></li>
                 <% end %>
