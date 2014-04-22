@@ -1,7 +1,12 @@
 class WorksController < ApplicationController
 
 	def index
-		@works = Work.order("created_at desc")
+		@posts = Work.all.map(&:id)
+		@posts.reverse
+		
+		@works1 = Work.find(@posts[0])
+		@works2 = Work.find(@posts[1])
+	
 	end
 
 

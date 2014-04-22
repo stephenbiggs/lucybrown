@@ -2,11 +2,12 @@
 
 <div class="work_index_box">
 
-	<% @works.each do |work| %>
-		
-		<% if work.image1.exists? %>
-			<div class="index_image1"><%= link_to (image_tag work.image1(:medium)), work_path(work) %></div>
-		<% end %>
-	<% end %>
+	<div class="index_image1">
+			<%= link_to (image_tag @works1.image1(:medium)), work_path(@posts[0]) %>
+	</div>
 
+	<div class="index_image2">
+		<%= link_to (image_tag @works2.image1(:medium)), work_path(@posts[1]) %>
+	</div>
 </div>
+
