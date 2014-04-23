@@ -1,20 +1,28 @@
 class WorksController < ApplicationController
 
 	def index
-		@posts = Work.all.map(&:id)
-		@posts.reverse
-		
-		@works1 = Work.find(@posts[0])
-		@works2 = Work.find(@posts[1])
-	
+		@posts = Work.all.reverse
+
+		@works1 = @posts[0]
+		@works2 = @posts[1]
+		@works3 = @posts[2]
+		@works4 = @posts[3]
+		@works5 = @posts[4]
+		@works6 = @posts[5]
+		@works7 = @posts[6]
+		@works8 = @posts[7]
+		@works9 = @posts[8]
+		@works10 = @posts[9]
+		@works11 = @posts[10]
+		@works12 = @posts[11]
+		@works13 = @posts[12]
+		@works14 = @posts[13]
 	end
 
 
 	def show
 		@work = Work.find(params[:id])
-		@next = @work.id + 1
-		@back = @work.id - 1
-		@total = Work.all.size
+		
 	end
 
 

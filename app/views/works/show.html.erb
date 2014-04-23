@@ -3,8 +3,8 @@
 
 		<div class="work_show_right">
 			<h2><%= @work.title %></h2>
-			<% if @next <= @total %>
-				<p class="show_next shownav"><%= link_to "NEXT", work_path(@next) %></p>
+			<% if @work.next %>
+				<p class="show_next shownav"><%= link_to "NEXT", @work.next %></p>
 			<% end %>
 
 			<% if @work.image2.exists? %>
@@ -21,8 +21,8 @@
 		</div>
 
 		<div class="work_show_left">
-			<% if @back > 0 %>
-				<p class="show_back shownav"><%= link_to "BACK", work_path(@back) %></p>
+			<% if @work.previous %>
+				<p class="show_back shownav"><%= link_to "BACK", @work.previous %></p>
 			<% end %>
 		</div>	
 	</div>

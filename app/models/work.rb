@@ -25,6 +25,13 @@ class Work < ActiveRecord::Base
 	validates_attachment_content_type :image2, :content_type => /\Aimage\/.*\z/
 
 
+	def previous
+  Work.where(["id < ?", id]).last
+	end
+
+	def next
+	  Work.where(["id > ?", id]).first
+	end
 
 
 
