@@ -52,6 +52,7 @@ gem 'foundation-rails'
 gem 'paperclip'
 gem 'activeadmin', github: "gregbell/active_admin"
 gem 'active_admin_editor'
+gem 'aws-sdk'
 
 
 
