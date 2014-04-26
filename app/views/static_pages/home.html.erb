@@ -1,10 +1,22 @@
 <% @page = "home" %>
 
-<% if @work1.image1.exists? %>
-	<div>
-		<%= image_tag @work1.image1(:medium) %>
+	<div class="home_images">
+		
+		<div class="i home_image0">
+			<%= image_tag @work1.image1(:medium) %>
+		</div>
+
+		<div class="i home_image1">
+			<%= image_tag @work2.image1(:small) %>
+		</div>
+
+		<div class="i home_image2">
+			<%= image_tag @work3.image1(:large) %>
+		</div>	
+
 	</div>
-<% end %>
+	
+
 
 
 <div class="homecontact">

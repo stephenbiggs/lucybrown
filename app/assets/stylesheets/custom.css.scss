@@ -359,8 +359,28 @@ h1 .strapline {
 
 		/** Home **/
 
+		.home_images {
+			width: 900px;
+			height: 400px;
+			position: relative;
+		}
+
+			.home_image0 {
+				z-index: 1;
+			}
+
+			.home_image1 {
+				z-index: 3;
+				left: 225px;
+			}
+
+			.home_image2 {
+				z-index: 2;
+				left: 380px;
+			}
+
 		.homecontact {
-			margin: 90px 0px 0px 227px;
+			margin: 90px 0px 180px 227px;
 			color: $secondarycolor;
 
 			li {

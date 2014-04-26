@@ -1,7 +1,11 @@
 class StaticPagesController < ApplicationController
 
 	def home
-		@work1 = Work.all.last
+		@works = Work.all.reverse
+		
+		@work1 = @works[0]
+		@work2 = @works[1]
+		@work3 = @works[2]
 	end
 
 
