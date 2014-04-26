@@ -3,15 +3,21 @@
 	<div class="home_images">
 		
 		<div class="i home_image0">
-			<%= image_tag @work1.image1(:medium) %>
+			<% if @work1 %>
+				<%= image_tag @work1.image1(:medium) %>
+			<% end %>
 		</div>
 
 		<div class="i home_image1">
-			<%= image_tag @work2.image1(:small) %>
+			<% if @work2 %>
+				<%= image_tag @work2.image1(:small) %>
+			<% end %>	
 		</div>
 
 		<div class="i home_image2">
-			<%= image_tag @work3.image1(:large) %>
+			<% if @work3 %>
+				<%= image_tag @work3.image1(:large) %>
+			<% end %>
 		</div>	
 
 	</div>
