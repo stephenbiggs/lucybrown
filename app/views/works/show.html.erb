@@ -7,13 +7,15 @@
 				<p class="show_next shownav"><%= link_to "NEXT", @work.next %></p>
 			<% end %>
 
-			<% if @work.image2.exists? %>
-				<div class="show_image2"><%= image_tag @work.image2(:small) %></div>
-			<% end %>
+			<div class="show_images">
+				<% if @work.image2.exists? %>
+					<div class="show_image2"><%= image_tag @work.image2(:small) %></div>
+				<% end %>
 
-			<% if @work.image1.exists? %>
-				<div class="show_image1"><%= image_tag @work.image1(:large) %></div>
-			<% end %>
+				<% if @work.image1.exists? %>
+					<div class="show_image1"><%= image_tag @work.image1(:large) %></div>
+				<% end %>	
+			</div>
 			
 			<div class="show_content">
 				<p><%= raw @work.content %></p>

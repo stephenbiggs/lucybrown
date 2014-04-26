@@ -197,90 +197,101 @@ h1 .strapline {
 
 	.work_index_box {
 		width: 900px;
-		height: 1870px;
+	}
+
+	.work_index_occurance {
+		width: 900px;
+		height: 1690px;
 		position: relative;
+		display: block;
+		margin-top: 30px;
+	}
+
+	.work_index_occurance:first-child {
+		margin-top: 0px;
 	}
 
 	.i {
 		position: absolute;
-		display: inline;
+		display: block;
 	}
 
-	.index_image1 {
+	.index_image0 {
 		z-index: 1;
 	}
 
-	.index_image2 {
+	.index_image1 {
 		z-index: 40;
 		left: 225px;
 	}
 
-	.index_image3 {
+	.index_image2 {
 		z-index: 22;
 		left: 380px;
 	}
 
-	.index_image4 {
+	.index_image3 {
 		z-index: 4;
 		top: 290px;
 	}
 
-	.index_image5 {
+	.index_image4 {
 		z-index: 9;
 		left: 450px;
 		top: 450px;
 	}
 
-	.index_image6 {
+	.index_image5 {
 		z-index: 6;
 		left: 600px;
 		top: 450px;
 	}
 
-	.index_image7 {
+	.index_image6 {
 		z-index: 20;
 		left: 225px;
 		top: 660px;
 	}
 
-	.index_image8 {
+	.index_image7 {
 		z-index: 30;
 		top: 820px;
 	}
 
-	.index_image9 {
+	.index_image8 {
 		z-index: 16;
 		left: 600px;
 		top: 740px;
 	}
 
-	.index_image10 {
+	.index_image9 {
 		z-index: 12;
 		top: 1030px;
 	}
 
-	.index_image11 {
+	.index_image10 {
 		z-index: 15;
-		left: 375px;
+		left: 380px;
 		top: 820px;
 	}
 
-	.index_image12 {
+	.index_image11 {
 		z-index: 10;
 		top: 1270px;
 	}
 
-	.index_image13 {
+	.index_image12 {
 		z-index: 76;
 		left: 450px;
 		top: 1420px;
 	}
 
-	.index_image14 {
+	.index_image13 {
 		z-index: 14;
 		top: 1270px;
 		left: 600px;
 	}
+
 
 	/** WORKS SHOW **/
 
@@ -289,6 +300,7 @@ h1 .strapline {
 	}
 
 	.work_show_right {
+		position: relative;
 		width: 762px;
 		padding-left: 90px;
 		float: right;

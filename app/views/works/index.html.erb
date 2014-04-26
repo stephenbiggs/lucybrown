@@ -3,88 +3,168 @@
 <div class="work_index_box">
 
 	<% if @works1 %>
-		<div class="i index_image1">
-				<%= link_to (image_tag @works1.image1(:medium)), work_path(@posts[0]) %>
+		<div class="work_index_occurance">
+		
+			
+
+				<% @b = Hash[@works1.map.with_index.to_a] %>
+
+				<% @works1.each do |work| %>
+
+						
+						<% if [1, 4, 7, 8, 12].include? @b[work] %>
+							<div class="i index_image<%= @b[work] %>">
+									<%= link_to (image_tag work.image1(:small)), work_path(work) %>
+							</div>
+						<% end %>
+
+
+						<% if  [0, 5, 6, 9, 13].include? @b[work] %>
+							<div class="i index_image<%= @b[work] %>">
+									<%= link_to (image_tag work.image1(:medium)), work_path(work) %>
+							</div>
+						<% end %>
+
+					
+						<% if [2, 3, 10, 11].include? @b[work] %>
+							<div class="i index_image<%= @b[work] %>">
+									<%= link_to (image_tag work.image1(:large)), work_path(work) %>
+							</div>
+						<% end %>
+
+				<% end %>
+
 		</div>
 	<% end %>
 
+
+	<!-- 2nd instance -->
 	<% if @works2 %>
-		<div class="i index_image2">
-			<%= link_to (image_tag @works2.image1(:small)), work_path(@posts[1]) %>
+		<div class="work_index_occurance">
+		
+			
+
+				<% @b = Hash[@works2.map.with_index.to_a] %>
+
+				<% @works2.each do |work| %>
+
+						
+						<% if [1, 4, 7, 8, 12].include? @b[work] %>
+							<div class="i index_image<%= @b[work] %>">
+									<%= link_to (image_tag work.image1(:small)), work_path(work) %>
+							</div>
+						<% end %>
+
+
+						<% if  [0, 5, 6, 9, 13].include? @b[work] %>
+							<div class="i index_image<%= @b[work] %>">
+									<%= link_to (image_tag work.image1(:medium)), work_path(work) %>
+							</div>
+						<% end %>
+
+					
+						<% if [2, 3, 10, 11].include? @b[work] %>
+							<div class="i index_image<%= @b[work] %>">
+									<%= link_to (image_tag work.image1(:large)), work_path(work) %>
+							</div>
+						<% end %>
+
+				<% end %>
+
 		</div>
 	<% end %>
 
+
+
+
+	<!-- 3rd instance -->
 	<% if @works3 %>
-		<div class="i index_image3">
-			<%= link_to (image_tag @works3.image1(:large)), work_path(@posts[2]) %>
+		<div class="work_index_occurance">
+		
+			
+
+				<% @b = Hash[@works3.map.with_index.to_a] %>
+
+				<% @works3.each do |work| %>
+
+						
+						<% if [1, 4, 7, 8, 12].include? @b[work] %>
+							<div class="i index_image<%= @b[work] %>">
+									<%= link_to (image_tag work.image1(:small)), work_path(work) %>
+							</div>
+						<% end %>
+
+
+						<% if  [0, 5, 6, 9, 13].include? @b[work] %>
+							<div class="i index_image<%= @b[work] %>">
+									<%= link_to (image_tag work.image1(:medium)), work_path(work) %>
+							</div>
+						<% end %>
+
+					
+						<% if [2, 3, 10, 11].include? @b[work] %>
+							<div class="i index_image<%= @b[work] %>">
+									<%= link_to (image_tag work.image1(:large)), work_path(work) %>
+							</div>
+						<% end %>
+
+				<% end %>
+
 		</div>
 	<% end %>
 
+
+
+
+	<!-- 4th instance -->
 	<% if @works4 %>
-		<div class="i index_image4">
-			<%= link_to (image_tag @works4.image1(:large)), work_path(@posts[3]) %>
+		<div class="work_index_occurance">
+		
+			
+
+				<% @b = Hash[@works4.map.with_index.to_a] %>
+
+				<% @works4.each do |work| %>
+
+						
+						<% if [1, 4, 7, 8, 12].include? @b[work] %>
+							<div class="i index_image<%= @b[work] %>">
+									<%= link_to (image_tag work.image1(:small)), work_path(work) %>
+							</div>
+						<% end %>
+
+
+						<% if  [0, 5, 6, 9, 13].include? @b[work] %>
+							<div class="i index_image<%= @b[work] %>">
+									<%= link_to (image_tag work.image1(:medium)), work_path(work) %>
+							</div>
+						<% end %>
+
+					
+						<% if [2, 3, 10, 11].include? @b[work] %>
+							<div class="i index_image<%= @b[work] %>">
+									<%= link_to (image_tag work.image1(:large)), work_path(work) %>
+							</div>
+						<% end %>
+
+				<% end %>
+
 		</div>
 	<% end %>
 
-	<% if @works5 %>
-		<div class="i index_image5">
-			<%= link_to (image_tag @works5.image1(:small)), work_path(@posts[4]) %>
-		</div>
-	<% end %>
 
-	<% if @works6 %>
-		<div class="i index_image6">
-			<%= link_to (image_tag @works6.image1(:medium)), work_path(@posts[5]) %>
-		</div>
-	<% end %>
 
-	<% if @works7 %>
-		<div class="i index_image7">
-			<%= link_to (image_tag @works7.image1(:medium)), work_path(@posts[6]) %>
-		</div>
-	<% end %>
 
-	<% if @works8 %>
-		<div class="i index_image8">
-			<%= link_to (image_tag @works8.image1(:small)), work_path(@posts[7]) %>
-		</div>
-	<% end %>
 
-	<% if @works9 %>
-		<div class="i index_image9">
-			<%= link_to (image_tag @works9.image1(:small)), work_path(@posts[8]) %>
-		</div>
-	<% end %>
 
-	<% if @works10 %>
-		<div class="i index_image10">
-			<%= link_to (image_tag @works10.image1(:medium)), work_path(@posts[9]) %>
-		</div>
-	<% end %>
 
-	<% if @works11 %>
-		<div class="i index_image11">
-			<%= link_to (image_tag @works11.image1(:large)), work_path(@posts[10]) %>
-		</div>
-	<% end %>
 
-	<% if @works12 %>
-		<div class="i index_image12">
-			<%= link_to (image_tag @works12.image1(:large)), work_path(@posts[11]) %>
-		</div>
-	<% end %>
 
-	<% if @works13 %>
-		<div class="i index_image13">
-			<%= link_to (image_tag @works13.image1(:small)), work_path(@posts[12]) %>
-		</div>
-	<% end %>
 
-	<% if @works14 %>
-		<div class="i index_image14">
-			<%= link_to (image_tag @works14.image1(:medium)), work_path(@posts[13]) %>
-		</div>
-	<% end %>
+
+
+
+
 
 </div>
 
