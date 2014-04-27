@@ -130,7 +130,7 @@ a {
 		font-size: 14px;
 		letter-spacing: 3px;
 		margin-left: 30px;
-		font-weight: bold;
+		/* font-weight: bold; */
 	}
 
 	
@@ -363,6 +363,7 @@ h1 .strapline {
 			width: 900px;
 			height: 400px;
 			position: relative;
+			display: block;
 		}
 
 			.home_image0 {
@@ -380,7 +381,7 @@ h1 .strapline {
 			}
 
 		.homecontact {
-			margin: 90px 0px 180px 227px;
+			padding: 90px 0px 180px 227px !important;
 			color: $secondarycolor;
 
 			li {
