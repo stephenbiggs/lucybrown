@@ -88,7 +88,8 @@ h3 {
 }
 
 a {
-		color: $secondarycolor;
+		color: $primarycolor;
+
 	}
 
 	a:active {
@@ -100,7 +101,7 @@ a {
 	}
 
 	a:hover {
-		color: $secondarycolor;
+		color: $thirdcolor;
 	}
 
 
@@ -400,7 +401,13 @@ h1 .strapline {
 		.contactdetails {
 
 			li {
-				line-height: 22px;
+				display: inline;
+				letter-spacing: 2px;
+				margin-left: 50px;
+			}
+
+			li:first-child {
+				margin-left: 0px;
 			}
 		}
 
