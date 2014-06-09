@@ -1,7 +1,7 @@
 class StaticPagesController < ApplicationController
 
 	def home
-		@works = Work.all.reverse
+		@works = Work.order('created_at DESC')
 		
 		@work1 = @works[0]
 		@work2 = @works[1]
