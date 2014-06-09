@@ -7,7 +7,8 @@ class Work < ActiveRecord::Base
 # Image 1
 	has_attached_file :image1, styles: {large: "525x420#",
 																			medium: "300x260#",
-																			small: "300x180#"
+																			small: "300x180#",
+																			full: "525x"
 	}
 
 
