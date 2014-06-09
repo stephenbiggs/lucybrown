@@ -2,7 +2,7 @@ class WorksController < ApplicationController
 
 	
 	def index
-		@posts = Work.all.reverse
+		@posts = Work.order('created_at DESC')
 
 		@works1 = @posts[0..14]
 		@works2 = @posts[14..27]
