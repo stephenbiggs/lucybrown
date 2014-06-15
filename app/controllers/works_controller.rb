@@ -5,9 +5,9 @@ class WorksController < ApplicationController
 		@posts = Work.order('created_at DESC')
 
 		@works1 = @posts[0..14]
-		@works2 = @posts[14..27]
-		@works3 = @posts[27..40]
-		@works4 = @posts[40..53]
+		@works2 = @posts[14..28]
+		@works3 = @posts[28..42]
+		@works4 = @posts[42..56]
 	
 	end
 
