@@ -382,7 +382,7 @@ h1 .strapline {
 			}
 
 		.homecontact {
-			padding: 90px 0px 180px 227px !important;
+			padding: 90px 0px 180px 0px !important;
 			color: $secondarycolor;
 
 			li {
@@ -390,6 +390,7 @@ h1 .strapline {
 				letter-spacing: 2px;
 				margin-left: 30px; /* was 50px */
 				font-size: 14px;
+				color: #000;
 			}
 
 			li:first-child {
@@ -402,15 +403,12 @@ h1 .strapline {
 		.contactdetails {
 
 			li {
-				display: inline;
 				letter-spacing: 2px;
-				margin-left: 30px; /* was 50px */
 				font-size: 14px;
+				margin-bottom: 14px;
+				color: #000;
 			}
 
-			li:first-child {
-				margin-left: 0px;
-			}
 		}
 
 
