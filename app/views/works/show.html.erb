@@ -3,10 +3,15 @@
 
 		<div class="work_show_right">
 			<h3><%= @work.title %></h3>
+
+			<% if @work.previous %>
+				<p class="show_next shownav"><%= link_to "NEXT", @work.previous %></p>
+			<% end %>
+<!--
 			<% if @work.next %>
 				<p class="show_next shownav"><%= link_to "NEXT", @work.next %></p>
 			<% end %>
-
+-->
 			<div class="show_images">
 				<% if @work.image2.exists? %>
 					<div class="show_image2"><%= image_tag @work.image2(:small) %></div>
@@ -23,8 +28,14 @@
 		</div>
 
 		<div class="work_show_left">
+		<!--
 			<% if @work.previous %>
 				<p class="show_back shownav"><%= link_to "BACK", @work.previous %></p>
 			<% end %>
+		-->
+			<% if @work.next %>
+				<p class="show_back shownav"><%= link_to "BACK", @work.next %></p>
+			<% end %>
+
 		</div>	
 	</div>
