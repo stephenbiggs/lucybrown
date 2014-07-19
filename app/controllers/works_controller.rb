@@ -54,7 +54,17 @@ class WorksController < ApplicationController
 		redirect_to root_path
 	end
 
-
+=begin
+	def remove_image
+		@work = Work.find(params[:id])
+		@work.image2_file_name = nil
+		@work.image2_content_type = nil
+		@work.image2_file_size = nil
+		@work.image2_updated_at = nil
+		@work.save
+		redirect_to root_path
+	end
+=end
 
 
 	def work_params
