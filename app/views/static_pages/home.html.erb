@@ -4,19 +4,19 @@
 		
 		<div class="i home_image0">
 			<% if @work1 %>
-				<%= image_tag @work1.image1(:medium) %>
+				<%= link_to (image_tag @work1.image1(:medium)), works_path %>
 			<% end %>
 		</div>
 
 		<div class="i home_image1">
 			<% if @work2 %>
-				<%= image_tag @work2.image1(:small) %>
+				<%= link_to (image_tag @work2.image1(:small)), works_path %>
 			<% end %>	
 		</div>
 
 		<div class="i home_image2">
 			<% if @work3 %>
-				<%= image_tag @work3.image1(:large) %>
+				<%= link_to (image_tag @work3.image1(:large)), works_path %>
 			<% end %>
 		</div>	
 
