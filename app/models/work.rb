@@ -3,6 +3,7 @@ class Work < ActiveRecord::Base
 	validates :title, presence: true
 	validates :content, presence: true
 
+	before_save :remove_photo
 
 # Image 1
 	has_attached_file :image1, styles: {large: "525x420#",
@@ -32,6 +33,11 @@ class Work < ActiveRecord::Base
 
 	def next
 	  Work.where(["id > ?", id]).first
+	end
+
+
+	def remove_photo
+		self.image2_file_name = nil if self.destroyImage2 == true
 	end
 
 

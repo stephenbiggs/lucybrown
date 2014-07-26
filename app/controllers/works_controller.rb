@@ -39,7 +39,6 @@ class WorksController < ApplicationController
 
 	def update
 		@work = Work.find(params[:id])
-
 		@work.update(work_params)
 
 		redirect_to root_path
@@ -48,27 +47,16 @@ class WorksController < ApplicationController
 
 	def destroy
 		@work = Work.find(params[:id])
-		
 		@work.destroy
-
 		redirect_to root_path
 	end
 
-=begin
-	def remove_image
-		@work = Work.find(params[:id])
-		@work.image2_file_name = nil
-		@work.image2_content_type = nil
-		@work.image2_file_size = nil
-		@work.image2_updated_at = nil
-		@work.save
-		redirect_to root_path
-	end
-=end
+
+
 
 
 	def work_params
-		params.require(:work).permit(:title, :content, :image1, :image2)
+		params.require(:work).permit(:title, :content, :image1, :image2, :destroyImage2)
 	end
 
 
