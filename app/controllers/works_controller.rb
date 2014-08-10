@@ -1,6 +1,7 @@
 class WorksController < ApplicationController
 
-	
+
+
 	def index
 		#@posts = Work.order('created_at DESC')
 
@@ -14,6 +15,22 @@ class WorksController < ApplicationController
 		@works2 = @personal[14..28]
 		@works3 = @personal[28..42]
 		@works4 = @personal[42..56]
+		
+			if @works1
+				@works1_total = @works1.size
+			end
+
+			if @works2	
+				@works2_total = @works2.size
+			end
+
+			if @works3
+				@works3_total = @works3.size
+			end
+
+			if @works4
+				@works4_total = @works4.size
+			end
 
 
 		@client = Work.where(category: "Client").order('created_at DESC')
@@ -22,8 +39,27 @@ class WorksController < ApplicationController
 		@worksc = @client[28..42]
 		@worksd = @client[42..56]
 
+			if @worksa
+				@worksa_total = @worksa.count
+			end
+
+			if @worksb	
+				@worksb_total = @worksb.count
+			end
+
+			if @worksc
+				@worksc_total = @worksc.count
+			end
+
+			if @worksd
+				@worksd_total = @worksd.count
+			end
+
+
 
 	end
+
+
 
 
 	def show
