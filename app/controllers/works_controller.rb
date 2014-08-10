@@ -2,13 +2,27 @@ class WorksController < ApplicationController
 
 	
 	def index
-		@posts = Work.order('created_at DESC')
+		#@posts = Work.order('created_at DESC')
 
-		@works1 = @posts[0..14]
-		@works2 = @posts[14..28]
-		@works3 = @posts[28..42]
-		@works4 = @posts[42..56]
+		#@works1 = @posts[0..14]
+		#@works2 = @posts[14..28]
+		#@works3 = @posts[28..42]
+		#@works4 = @posts[42..56]
 	
+		@personal = Work.where(category: "Personal")
+		@works1 = @personal[0..14]
+		@works2 = @personal[14..28]
+		@works3 = @personal[28..42]
+		@works4 = @personal[42..56]
+
+
+		@client = Work.where(category: "Client")
+		@worksa = @client[0..14]
+		@worksb = @client[14..28]
+		@worksc = @client[28..42]
+		@worksd = @client[42..56]
+
+
 	end
 
 
@@ -56,7 +70,7 @@ class WorksController < ApplicationController
 
 
 	def work_params
-		params.require(:work).permit(:title, :content, :image1, :image2, :destroyImage2)
+		params.require(:work).permit(:title, :content, :image1, :image2, :destroyImage2, :category)
 	end
 
 

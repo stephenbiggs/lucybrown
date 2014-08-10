@@ -1,6 +1,11 @@
 <% @page = "work" %>
 
+
+<!-- Personal Work -->
+
 <div class="work_index_box">
+
+	<h2 class="category">Personal Work</h2>
 
 	<% if @works1 %>
 		<div class="work_index_occurance">
@@ -153,18 +158,175 @@
 	<% end %>
 
 
+</div>
+
+<!-- End of Personal work -->
+
+
+
+<!-- Client Work -->
+
+<div class="work_index_box">
+
+	<h2 class="category">Client Work</h2>
+
+	<% if @worksa %>
+		<div class="work_index_occurance">
+		
+			
+
+				<% @b = Hash[@worksa.map.with_index.to_a] %>
+
+				<% @worksa.each do |work| %>
+
+						
+						<% if [1, 4, 7, 8, 12].include? @b[work] %>
+							<div class="i index_image<%= @b[work] %>">
+									<%= link_to (image_tag work.image1(:small)), work_path(work) %>
+							</div>
+						<% end %>
+
+
+						<% if  [0, 5, 6, 9, 13].include? @b[work] %>
+							<div class="i index_image<%= @b[work] %>">
+									<%= link_to (image_tag work.image1(:medium)), work_path(work) %>
+							</div>
+						<% end %>
+
+					
+						<% if [2, 3, 10, 11].include? @b[work] %>
+							<div class="i index_image<%= @b[work] %>">
+									<%= link_to (image_tag work.image1(:large)), work_path(work) %>
+							</div>
+						<% end %>
+
+				<% end %>
+
+		</div>
+	<% end %>
+
+
+	<!-- 2nd instance -->
+	<% if @worksb %>
+		<div class="work_index_occurance">
+		
+			
+
+				<% @b = Hash[@worksb.map.with_index.to_a] %>
+
+				<% @worksb.each do |work| %>
+
+						
+						<% if [1, 4, 7, 8, 12].include? @b[work] %>
+							<div class="i index_image<%= @b[work] %>">
+									<%= link_to (image_tag work.image1(:small)), work_path(work) %>
+							</div>
+						<% end %>
+
+
+						<% if  [0, 5, 6, 9, 13].include? @b[work] %>
+							<div class="i index_image<%= @b[work] %>">
+									<%= link_to (image_tag work.image1(:medium)), work_path(work) %>
+							</div>
+						<% end %>
+
+					
+						<% if [2, 3, 10, 11].include? @b[work] %>
+							<div class="i index_image<%= @b[work] %>">
+									<%= link_to (image_tag work.image1(:large)), work_path(work) %>
+							</div>
+						<% end %>
+
+				<% end %>
+
+		</div>
+	<% end %>
 
 
 
 
+	<!-- 3rd instance -->
+	<% if @worksc %>
+		<div class="work_index_occurance">
+		
+			
+
+				<% @b = Hash[@worksc.map.with_index.to_a] %>
+
+				<% @worksc.each do |work| %>
+
+						
+						<% if [1, 4, 7, 8, 12].include? @b[work] %>
+							<div class="i index_image<%= @b[work] %>">
+									<%= link_to (image_tag work.image1(:small)), work_path(work) %>
+							</div>
+						<% end %>
+
+
+						<% if  [0, 5, 6, 9, 13].include? @b[work] %>
+							<div class="i index_image<%= @b[work] %>">
+									<%= link_to (image_tag work.image1(:medium)), work_path(work) %>
+							</div>
+						<% end %>
+
+					
+						<% if [2, 3, 10, 11].include? @b[work] %>
+							<div class="i index_image<%= @b[work] %>">
+									<%= link_to (image_tag work.image1(:large)), work_path(work) %>
+							</div>
+						<% end %>
+
+				<% end %>
+
+		</div>
+	<% end %>
 
 
 
 
+	<!-- 4th instance -->
+	<% if @worksd %>
+		<div class="work_index_occurance">
+		
+			
 
+				<% @b = Hash[@worksd.map.with_index.to_a] %>
+
+				<% @worksd.each do |work| %>
+
+						
+						<% if [1, 4, 7, 8, 12].include? @b[work] %>
+							<div class="i index_image<%= @b[work] %>">
+									<%= link_to (image_tag work.image1(:small)), work_path(work) %>
+							</div>
+						<% end %>
+
+
+						<% if  [0, 5, 6, 9, 13].include? @b[work] %>
+							<div class="i index_image<%= @b[work] %>">
+									<%= link_to (image_tag work.image1(:medium)), work_path(work) %>
+							</div>
+						<% end %>
+
+					
+						<% if [2, 3, 10, 11].include? @b[work] %>
+							<div class="i index_image<%= @b[work] %>">
+									<%= link_to (image_tag work.image1(:large)), work_path(work) %>
+							</div>
+						<% end %>
+
+				<% end %>
+
+		</div>
+	<% end %>
 
 
 
 
 </div>
+
+<!-- End of Client work -->
+
+
+
 

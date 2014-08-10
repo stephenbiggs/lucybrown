@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140726132120) do
+ActiveRecord::Schema.define(version: 20140810101006) do
 
   create_table "active_admin_comments", force: true do |t|
     t.string   "namespace"
@@ -60,6 +60,7 @@ ActiveRecord::Schema.define(version: 20140726132120) do
     t.integer  "image2_file_size"
     t.datetime "image2_updated_at"
     t.boolean  "destroyImage2",       default: false
+    t.string   "category"
   end
 
 end
