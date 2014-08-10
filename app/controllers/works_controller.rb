@@ -9,14 +9,14 @@ class WorksController < ApplicationController
 		#@works3 = @posts[28..42]
 		#@works4 = @posts[42..56]
 	
-		@personal = Work.where(category: "Personal")
+		@personal = Work.where(category: "Personal").order('created_at DESC')
 		@works1 = @personal[0..14]
 		@works2 = @personal[14..28]
 		@works3 = @personal[28..42]
 		@works4 = @personal[42..56]
 
 
-		@client = Work.where(category: "Client")
+		@client = Work.where(category: "Client").order('created_at DESC')
 		@worksa = @client[0..14]
 		@worksb = @client[14..28]
 		@worksc = @client[28..42]
