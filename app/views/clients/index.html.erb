@@ -1,22 +1,22 @@
 <% @page = "work" %>
-<% @subpage = "personal" %>
+<% @subpage = "client" %>
 
 
-<!-- Personal Work -->
+<!-- Client Work -->
 
 <div class="work_index_box">
 
 	<h2 class="category <%= "underline" if @subpage == "personal" %>"><%= link_to "Personal", works_path %></h2>
 	<h2 class="category <%= "underline" if @subpage == "client" %>"><%= link_to "Client", clients_path %></h2>
 
-	<% if @works1 %>
-		<div class="work_index_occurance <%= 'three' if @works1_total >= 1 && @works1_total <= 3 %><%= 'six' if @works1_total >= 4 && @works1_total <= 6 %><%= 'nine' if @works1_total >= 7 && @works1_total <= 9 %><%= 'eleven' if @works1_total >= 10 && @works1_total <= 11 %><%= 'fourteen' if @works1_total >= 12 && @works1_total <= 14 %>">
+	<% if @worksa %>
+		<div class="work_index_occurance <%= 'three' if @worksa_total >= 1 && @worksa_total <= 3 %><%= 'six' if @worksa_total >= 4 && @worksa_total <= 6 %><%= 'nine' if @worksa_total >= 7 && @worksa_total <= 9 %><%= 'eleven' if @worksa_total >= 10 && @worksa_total <= 11 %><%= 'fourteen' if @worksa_total >= 12 && @worksa_total <= 14 %>">
 		
 			
 
-				<% @b = Hash[@works1.map.with_index.to_a] %>
+				<% @b = Hash[@worksa.map.with_index.to_a] %>
 
-				<% @works1.each do |work| %>
+				<% @worksa.each do |work| %>
 
 						
 						<% if [1, 4, 7, 8, 12].include? @b[work] %>
@@ -46,14 +46,14 @@
 
 
 	<!-- 2nd instance -->
-	<% if @works2 %>
-		<div class="work_index_occurance <%= 'three' if @works2_total >= 1 && @works2_total <= 3 %><%= 'six' if @works2_total >= 4 && @works2_total <= 6 %><%= 'nine' if @works2_total >= 7 && @works2_total <= 9 %><%= 'eleven' if @works2_total >= 10 && @works2_total <= 11 %><%= 'fourteen' if @works2_total >= 12 && @works2_total <= 14 %>">
+	<% if @worksb %>
+		<div class="work_index_occurance <%= 'three' if @worksb_total >= 1 && @worksb_total <= 3 %><%= 'six' if @worksb_total >= 4 && @worksb_total <= 6 %><%= 'nine' if @worksb_total >= 7 && @worksb_total <= 9 %><%= 'eleven' if @worksb_total >= 10 && @worksb_total <= 11 %><%= 'fourteen' if @worksb_total >= 12 && @worksb_total <= 14 %>">
 		
 			
 
-				<% @b = Hash[@works2.map.with_index.to_a] %>
+				<% @b = Hash[@worksb.map.with_index.to_a] %>
 
-				<% @works2.each do |work| %>
+				<% @worksb.each do |work| %>
 
 						
 						<% if [1, 4, 7, 8, 12].include? @b[work] %>
@@ -85,14 +85,14 @@
 
 
 	<!-- 3rd instance -->
-	<% if @works3 %>
-		<div class="work_index_occurance <%= 'three' if @works3_total >= 1 && @works3_total <= 3 %><%= 'six' if @works3_total >= 4 && @works3_total <= 6 %><%= 'nine' if @works3_total >= 7 && @works3_total <= 9 %><%= 'eleven' if @works3_total >= 10 && @works3_total <= 11 %><%= 'fourteen' if @works3_total >= 12 && @works3_total <= 14 %>">
+	<% if @worksc %>
+		<div class="work_index_occurance <%= 'three' if @worksc_total >= 1 && @worksc_total <= 3 %><%= 'six' if @worksc_total >= 4 && @worksc_total <= 6 %><%= 'nine' if @worksc_total >= 7 && @worksc_total <= 9 %><%= 'eleven' if @worksc_total >= 10 && @worksc_total <= 11 %><%= 'fourteen' if @worksc_total >= 12 && @worksc_total <= 14 %>">
 		
 			
 
-				<% @b = Hash[@works3.map.with_index.to_a] %>
+				<% @b = Hash[@worksc.map.with_index.to_a] %>
 
-				<% @works3.each do |work| %>
+				<% @worksc.each do |work| %>
 
 						
 						<% if [1, 4, 7, 8, 12].include? @b[work] %>
@@ -124,14 +124,14 @@
 
 
 	<!-- 4th instance -->
-	<% if @works4 %>
-		<div class="work_index_occurance <%= 'three' if @works4_total >= 1 && @works4_total <= 3 %><%= 'six' if @works4_total >= 4 && @works4_total <= 6 %><%= 'nine' if @works4_total >= 7 && @works4_total <= 9 %><%= 'eleven' if @works4_total >= 10 && @works4_total <= 11 %><%= 'fourteen' if @works4_total >= 12 && @works4_total <= 14 %>">
+	<% if @worksd %>
+		<div class="work_index_occurance <%= 'three' if @worksd_total >= 1 && @worksd_total <= 3 %><%= 'six' if @worksd_total >= 4 && @worksd_total <= 6 %><%= 'nine' if @worksd_total >= 7 && @worksd_total <= 9 %><%= 'eleven' if @worksd_total >= 10 && @worksd_total <= 11 %><%= 'fourteen' if @worksd_total >= 12 && @worksd_total <= 14 %>">
 		
 			
 
-				<% @b = Hash[@works4.map.with_index.to_a] %>
+				<% @b = Hash[@worksd.map.with_index.to_a] %>
 
-				<% @works4.each do |work| %>
+				<% @worksd.each do |work| %>
 
 						
 						<% if [1, 4, 7, 8, 12].include? @b[work] %>
@@ -160,11 +160,8 @@
 	<% end %>
 
 
+
+
 </div>
 
-<!-- End of Personal work -->
-
-
-
-
-
+<!-- End of Client work -->
