@@ -17,19 +17,19 @@ class WorksController < ApplicationController
 		@works4 = @personal[42..56]
 		
 			if @works1
-				@works1_total = @works1.size
+				@works1_total = @works1.count
 			end
 
 			if @works2	
-				@works2_total = @works2.size
+				@works2_total = @works2.count
 			end
 
 			if @works3
-				@works3_total = @works3.size
+				@works3_total = @works3.count
 			end
 
 			if @works4
-				@works4_total = @works4.size
+				@works4_total = @works4.count
 			end
 
 	end
