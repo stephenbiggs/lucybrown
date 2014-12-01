@@ -104,9 +104,6 @@ a {
 		color: $thirdcolor;
 	}
 
-	.underline { 
-		border-bottom: solid 1px $secondarycolor; 
-	}
 
 
 .wrapper {
@@ -203,7 +200,7 @@ h1 .strapline {
 	.work_index_box {
 		width: 900px;
 
-		h2:first-child { margin-right: 53px; }
+		h2:first-child { margin-right: 53px; margin-left: 227px; }
 	}
 
 	.work_index_occurance {
@@ -411,6 +408,10 @@ h1 .strapline {
 		.category { color: $secondarycolor; letter-spacing: 2px; display: inline;	padding-bottom: 5px;
 			a { color: $secondarycolor; }
 		 }
+
+		.active { 
+			a { color: $primarycolor; }
+		}
 
 		/** Contact **/
 

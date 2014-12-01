@@ -6,8 +6,8 @@
 
 <div class="work_index_box">
 
-	<h2 class="category <%= "underline" if @subpage == "personal" %>"><%= link_to "Personal", works_path %></h2>
-	<h2 class="category <%= "underline" if @subpage == "client" %>"><%= link_to "Client", clients_path %></h2>
+	<h2 class="category <%= "active" if @subpage == "personal" %>"><%= link_to "Personal Work", works_path %></h2>
+	<h2 class="category <%= "active" if @subpage == "client" %>"><%= link_to "Client Work", clients_path %></h2>
 
 	<% if @worksa %>
 		<div class="work_index_occurance <%= 'three' if @worksa_total >= 1 && @worksa_total <= 3 %><%= 'six' if @worksa_total >= 4 && @worksa_total <= 6 %><%= 'nine' if @worksa_total >= 7 && @worksa_total <= 9 %><%= 'eleven' if @worksa_total >= 10 && @worksa_total <= 11 %><%= 'fourteen' if @worksa_total >= 12 && @worksa_total <= 15 %>">
